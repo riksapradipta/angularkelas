@@ -1,0 +1,13 @@
+<form class="forms-sample" [formGroup]="productForm" (ngSubmit)="closeDialog()">
+  <div class="form-group">
+    <label>Product Name</label>
+    <input type="text" class="form-control form-control-sm" placeholder="Product Name" formControlName="nameproduct">
+  </div>
+  <div class="form-group">
+    <label>Category ID</label>
+    <input type="text" class="form-control form-control-sm" placeholder="Category ID" formControlName="idcategory">
+  </div>
+  <br>
+  <button type="button" class="btn btn-primary mr-2 float-end" >Cancel</button>
+  <button type="submit" class="btn btn-primary mr-2 float-end" >{{ data?.idproduct ? 'Edit' : 'Add' }}</button>
+</form>

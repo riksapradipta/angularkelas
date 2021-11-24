@@ -1,0 +1,8 @@
+<p>exercise works!</p>
+
+<div *ngFor="let dat of e">
+  <input type="text" placeholder="input nama disini" [(ngModel)]="dat.nama" [readonly]="!dat.status">
+  <input type="number" placeholder="input nama disini" [(ngModel)]="dat.umur" [disabled]="dat.status">
+  <input type="checkbox" [(ngModel)]="dat.status">
+  <app-card [data]="dat"></app-card>
+</div>
